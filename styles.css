@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    text-align: center;
+    font-family: Arial;
+    font-size: 17px;
+    background-color: #30475e;
+    color: white;
+}
+
+.navbar, .footer {
+    background-color: #222831 !important;
+}
+
+h1 {
+    padding: 15px;
+}
+
+h2 {
+    padding: 15px 15px 5px 15px;
+}
+
+h3 {
+    padding-bottom: 30px;
+    padding-top: 5px;
+}
+
+input[type=submit] {
+    padding: 5px 15px;
+    background: #ccc;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+img {
+    width: 70%;
+}
+
+.recipe-text {
+    padding: 5px 30px 0 30px;
+}
+
+.idea-text {
+    padding-bottom: 15px;
+}
+
+.search-header {
+    border-top: solid white;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+    .grid img {
+        width: 100%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template: auto auto auto auto auto / 1fr 1fr;
+        grid-column-gap: 10px;
+        width: 90%;
+        margin: auto;
+        font-size: .5em;
+    }
+
+    .meal-box img {
+        width: 30%;
+        margin: 20px 0;
+    }
+
+    .recipe-text {
+        padding: 5px 90px 40px 90px;
+    }
+
+    .meal-box .recipe-text {
+        margin: auto auto;
+        padding: 5px 30px 0 20px;
+    }
+
+    .meal-box {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .page {
+        width: 1000px;
+        margin: auto;
+    }
+
+    .grid img {
+        width: 100%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template: auto auto auto auto auto / 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        width: 90%;
+        margin: auto;
+        font-size: .5em;
+    }
+
+    .meal-box img {
+        width:30%;
+        margin: 20px 0;
+    }
+
+    .meal-box .recipe-text{
+        margin: auto auto;
+    }
+
+    .meal-box {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
+
+    .recipe-text {
+        padding: 5px 90px 40px 90px;
+    }
+}
